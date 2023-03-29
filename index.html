@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<script type="module" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="jquery-3.6.3.min.js"></script>
 
+<html lang="en">
+    <div class="topnav">
+        <a class="active" href="#Spring">Spring</a>
+        <a href="#Summer">Summer</a>
+        <a href="#Fall">Fall</a>
+        <a href="#Winter">Winter</a>
+      </div>
+<head>
+  <div class="anime-list"></div>
+
+  <div>
+      <canvas id="myChart" height="450" style="width:100%;max-width:1000px;height:100%;max-height:700px;display:block;margin-left:auto;margin-right:auto;"></canvas>
+  </div>
+
+  <div>
+      <canvas id="myChart1" height="450" style="width:100%;max-width:1000px;height:100%;max-height:700px;display:block;margin-left:auto;margin-right:auto;"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('myChart');
+    const mydata = [11,11,11,11]
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: mydata,
+          borderWidth: 1
+        }]
+      },
+      options: {
+      }
+    });
+  </script>
+
+
+<script>
+  const ctx1 = document.getElementById('myChart1');
+  const mydata1 = [11,113,112,12]
+  new Chart(ctx1, {
+    type: 'line',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: mydata1,
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+<title>HI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>HIIIIIIIIIIIIII</h1>
+<p>A website created by me.</p>
+
+</body>
+</html>
