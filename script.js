@@ -1,3 +1,3 @@
-fetch("https://github.com/jfauls/mal-scores-over-time/SeasonalAnime.json")
+fetch("http://jfauls.github.io/mal-scores-over-time/SeasonalAnime.json")
   .then((response) => response.json())
   .then((data) => console.log(data));
